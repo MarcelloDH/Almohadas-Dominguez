@@ -1,0 +1,247 @@
+/* Landing Page Diseño */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F2F2F2;
+    color: #0D0D0D;
+  }
+  
+  h1, h2 {
+    font-family: 'Pacifico', cursive;
+    margin: 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(13, 13, 13, 0.7);
+    position: relative;
+    z-index: 3;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .logo {
+    height: 50px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #F2F2F2;
+    font-weight: bold;
+  }
+  
+  .hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #F2F2F2;
+    background-image: url('IMG/Fondo\ almohadas.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+  }
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(13, 13, 13, 0.6); 
+    z-index: 2;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 3; 
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .hero h1 span {
+    color: #F2F2F2;
+  }
+  
+  .cta-btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    background-color: #0D0D0D;
+    color: #F2F2F2;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-btn:hover {
+    background-color: #121212;
+  }  
+/* Landing Page Diseño */
+
+/* Contacto Diseño */
+.contact-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #F2F2F2;
+  color: #0D0D0D;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-section h1 {
+  font-family: 'Pacifico', cursive;
+  margin-bottom: 1rem;
+}
+
+.contact-section p {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form label {
+  text-align: left;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #797979;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #0D0D0D;
+}
+/* Contacto Diseño */
+
+/* Productos Diseño */
+.productos-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #F2F2F2;
+  color: #0D0D0D;
+  min-height: 100vh;
+}
+
+.productos-section h1 {
+  font-family: 'Pacifico', cursive;
+  margin-bottom: 2rem;
+}
+
+.productos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.producto {
+  background-color: #ffffff;
+  border: 1px solid #797979;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 320px; /* ⬅️ Aumenté el ancho */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+}
+
+.producto img {
+  width: 100%;
+  height: 280px; /* ⬅️ Aumenté la altura */
+  object-fit: cover;
+}
+
+.producto h2 {
+  font-size: 1.4rem;
+  margin: 1rem 0 0.5rem 0;
+}
+
+.producto p {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #797979;
+}
+/* Productos Diseño */
+
+/* Destacados Diseño */
+.tachado {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+
+.oferta {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #d62828;
+}
+
+.etiqueta-oferta {
+  display: inline-block;
+  background-color: #d62828;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.producto {
+  position: relative;
+}
+
+.producto-horizontal {
+  width: 500px; 
+}
+
+.producto-horizontal img {
+  height: 220px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.etiqueta-oferta {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+/* Destacados Diseño */
